@@ -16,3 +16,12 @@ header .logo img {
     max-width: 100%;
     margin: 0 auto;
 }
+
+header .pure-menu-link {
+    font-size: 1.1rem;
+}
+
+header .pure-menu-link:hover {
+    background: none;
+    color: #416678;
+}
