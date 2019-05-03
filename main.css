@@ -1,12 +1,14 @@
-h1 {
-    text-align: center;
-    color: green;
-}
-
-p {
+header {
    text-align: center;    
 }
 
-p img {
+header .logo {
+    display: block;
+}
+
+header .logo img {
+    display: block;
+    width: 800px;
     max-width: 100%;
+    margin: 0 auto;
 }
