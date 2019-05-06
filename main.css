@@ -12,8 +12,8 @@ header .logo {
 
 header .logo img {
     display: block;
-    width: 800px;
-    max-width: 100%;
+    width: 100%;
+    max-width: 640px;
     margin: 0 auto;
 }
 
@@ -24,4 +24,42 @@ header .pure-menu-link {
 header .pure-menu-link:hover {
     background: none;
     color: #416678;
+}
+
+main {
+    padding: 7px;
+    max-width: 640px;
+    margin: 20px auto;
+}
+
+main img {
+    display: block;
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+main section {
+    width: 100%;
+    max-width: 260px;
+    margin: 0 auto;
+}
+
+main section h2 {
+    margin: 27px 0 20px;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+main section p {
+    font-size: 14px;
+}
+
+.center {
+    text-align: center;
+}
+
+.adjust-left {
+    position: relative;
+    left: 24px;
 }
