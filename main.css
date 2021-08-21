@@ -1,0 +1,17 @@
+html,
+body {
+  margin: 0;
+  background: white;
+}
+
+body {
+  font-family: 'Barlow Semi Condensed', '游ゴシック体', YuGothic, '游ゴシック', 'Yu Gothic', sans-serif;
+}
+
+footer {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 13px;
+  margin: 20px;
+  color: #bbb;
+}
