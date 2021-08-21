@@ -120,6 +120,29 @@ section p {
   bottom: 0;
 }
 
+.section__email-link {
+  text-decoration: none;
+  color: #444;
+}
+
+.section__icons {
+  margin: 0;
+  padding: 0;
+}
+
+.section__icons li {
+  display: inline-block;
+  margin: 0;
+  margin-right: 20px;
+}
+
+.section__icons a {
+  font-size: 40px;
+  line-height: 39px;
+  margin: 0;
+  color: #777;
+}
+
 footer {
   text-align: center;
   text-transform: uppercase;
