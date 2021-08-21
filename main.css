@@ -179,6 +179,10 @@ footer {
     height: auto;
   }
 
+  .nav--highlight {
+    background-color: transparent;
+  }
+
   .nav__container {
     display: none;
   }
