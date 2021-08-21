@@ -89,6 +89,20 @@ header {
   width: 100%;
 }
 
+section {
+  margin: 40px;
+  padding: 40px 0;
+  border-top: 1px solid rgb(216, 215, 210);
+}
+
+section > div {
+  margin: 40px 0;
+}
+
+section p {
+  margin: .25em 0;
+}
+
 footer {
   text-align: center;
   text-transform: uppercase;
