@@ -15,27 +15,42 @@ const NAV_BG_MAX_OPACITY = 0.9;
 const $ = document.querySelector.bind(document);
 const $nav = $('nav');
 const $navContainer = $('.nav__container');
+const $navHamburgerBtn = $('.nav__hamburger');
 const $navTitle = $('.nav__title');
 const $navLinks = $('.nav__links');
 
 // Event handlers
-let isClosing = false;
+function isNavOpen() {
+  return $nav.classList.contains(MOD_NAV_OPEN);
+}
+
 function toggleNav() {
-  const isOpen = $nav.classList.contains(MOD_NAV_OPEN);
-  if (isOpen) {
-    if (isClosing) return;  // Already closing
-    isClosing = true;
-    $nav.classList.remove(MOD_NAV_HIGHLIGHT);
-    $navLinks.classList.remove(MOD_NAV_LINKS_OPAQUE);
-    setTimeout(function () {
-      $nav.classList.remove(MOD_NAV_OPEN);
-      isClosing = false;
-    }, NAV_TRANSITION_DURATION_MS);
+  if (isNavOpen()) {
+    closeNav();
   } else {
     $nav.classList.add(MOD_NAV_OPEN, MOD_NAV_HIGHLIGHT);
     $navLinks.classList.add(MOD_NAV_LINKS_OPAQUE);
   }
 }
+$navHamburgerBtn.addEventListener('click', toggleNav);
+
+let isClosing = false;
+function closeNav() {
+  if (!isNavOpen() || isClosing) return;  // Not open or already closing
+  isClosing = true;
+  $nav.classList.remove(MOD_NAV_HIGHLIGHT);
+  $navLinks.classList.remove(MOD_NAV_LINKS_OPAQUE);
+  setTimeout(function () {
+    $nav.classList.remove(MOD_NAV_OPEN);
+    isClosing = false;
+  }, NAV_TRANSITION_DURATION_MS);
+}
+document.body.addEventListener('click', closeNav);
+
+$nav.addEventListener('click', function (e) {
+  // Prevent clicking $nav from calling closeNav().
+  e.stopPropagation()
+});
 
 function animationFrameStep() {
   const scrollRatio = Math.min(
