@@ -96,11 +96,24 @@ section {
 }
 
 section > div {
+  position: relative;
   margin: 40px 0;
+  overflow: hidden;
 }
 
 section p {
   margin: .25em 0;
+}
+
+.section__profile-image {
+  height: 182px;
+  float: right;
+}
+
+.section__profile-name {
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
 footer {
