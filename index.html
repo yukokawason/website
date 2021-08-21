@@ -8,7 +8,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@200;300&display=swap" rel="stylesheet">
 
     <!-- Assets -->
     <link rel="stylesheet" href="/main.css">
@@ -17,20 +17,22 @@
   <body>
     <nav>
       <div class="nav__container">
-        <button class="nav__hamburger"></button>
+        <button class="nav__hamburger" onclick="toggleNav()"></button>
         <img class="nav__title" src="/image/title.png">
       </div>
       <ul class="nav__links">
         <li><a href="/" class="nav__link">About Me</a></li>
-        <li><a href="https://www.instagram.com/kawason000/" class="nav__link">Gallery</a></li>
-        <li><a href="https://suzuri.jp/kawason000" class="nav__link">Shop</a></li>
-        <li><a href="https://www.vivivit.com/yukokawason" class="nav__link">Portfolio</a></li>
+        <li><a href="https://www.instagram.com/kawason000/" target="_blank" class="nav__link">Gallery</a></li>
+        <li><a href="https://suzuri.jp/kawason000" target="_blank" class="nav__link">Shop</a></li>
+        <li><a href="https://www.vivivit.com/yukokawason" target="_blank" class="nav__link">Portfolio</a></li>
         <li><a href="/contact/" class="nav__link">Contact</a></li>
       </ul>
     </nav>
 
     </nav>
+    <!--
     <footer>©<script>document.write(new Date().getFullYear())</script> Kawamura Yuko</footer>
+    -->
     <script src="/main.js"></script>
   </body>
 </html>
