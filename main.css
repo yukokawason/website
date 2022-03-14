@@ -2,6 +2,7 @@ html,
 body {
   margin: 0;
   background: white;
+  font-size: 14px;
 }
 
 body {
@@ -119,6 +120,15 @@ section p {
   position: absolute;
   left: 0;
   bottom: 0;
+  font-size: 1.4rem;
+}
+
+.section__profile-profession {
+  position: absolute;
+  top: -15px;
+  left: 0;
+  font-size: 0.9rem;
+  color: #777;
 }
 
 .section__email-link {
